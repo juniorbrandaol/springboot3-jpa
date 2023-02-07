@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.eblj.course.entities.User;
 
 @RestController
-@RequestMapping(value="/users")
+@RequestMapping(value="/users/findAll")
 public class UserResource {
 	
 	@GetMapping
@@ -16,5 +16,6 @@ public class UserResource {
 		User u = new User(1L,"Maria","maria@gmail.com","83998184302","123456");
 		return ResponseEntity.ok().body(u);
 	}
-
+	
+		
 }
